@@ -230,7 +230,7 @@ Ties favour smaller k, and the subset is fixed before test evaluation.
 
 ## 10. Results and Performance Comparison
 
-### Primary split (495 segments, 45 recordings) — paper Table 5
+### Primary split (495 segments, 45 recordings)
 
 | Model | Acc. (%) | Macro precision | Macro recall | Macro F1 | AUC (OvR) | Record. acc. (%) |
 |---|---|---|---|---|---|---|
@@ -243,7 +243,7 @@ Ties favour smaller k, and the subset is fixed before test evaluation.
 
 On this split, ensembling did not improve Model C.
 
-### Four recording-level splits (mean ± SD) — paper Table 6
+### Four recording-level splits (mean ± SD) 
 
 | Model | Accuracy (%) | Macro F1 | Recording acc. (%) |
 |---|---|---|---|
@@ -257,7 +257,7 @@ On this split, ensembling did not improve Model C.
 | Extra-Trees (selected features) | 96.21 ± 1.88 | 0.9620 ± 0.0190 | 98.33 ± 2.13 |
 | Gradient boosting (selected features) | 96.06 ± 1.64 | 0.9605 ± 0.0167 | 98.33 ± 2.13 |
 
-### Per-split test accuracy (%) — paper Table 7
+### Per-split test accuracy (%) 
 
 | Split (seed) | A single | B single | C single | A ens. | B ens. | C ens. |
 |---|---|---|---|---|---|---|
@@ -286,10 +286,9 @@ Ictal recall was 0.9939 for all models (164 of 165 segments). **Interictal was t
 
 ### ROC curves and learned representation
 
-
 The mean gate value on the CNN embedding was 0.521 (Normal), 0.552 (Interictal) and 0.654 (Ictal), indicating that both branches contribute and the CNN branch is weighted more for Ictal.
 
-### Ablation study — paper Table 9
+### Ablation study 
 
 | Variant | Primary split acc. (%) | Accuracy (%), four splits | Macro F1, four splits |
 |---|---|---|---|
@@ -305,7 +304,7 @@ The mean gate value on the CNN embedding was 0.521 (Normal), 0.552 (Interictal) 
 | **GDF-Net, single network** | **96.77** | **97.02 ± 1.58** | **0.9702 ± 0.0158** |
 | **GDF-Net, five-network ensemble** | **95.96** | **97.37 ± 1.38** | **0.9737 ± 0.0139** |
 
-### Statistical comparison (summary of paper Section 4.5)
+### Statistical comparison 
 
 - On the primary split, McNemar p-values for single runs: C vs A = 1.51×10⁻³, C vs B = 3.11×10⁻⁴; B vs A = 0.864 (no difference).
 - Bootstrap (5,000 resamples of 45 recordings): C − A = +3.43 points (95% CI +0.61 to +7.68); C − B = +3.84 (95% CI +0.81 to +8.08). For ensembles the intervals include zero (C − A: −0.20 to +6.26; C − B: −0.00 to +6.87).
@@ -339,7 +338,7 @@ As acknowledged by the authors:
 
 ## 13. Future Work
 
-Per the paper: repeated cross-validation over more recording-level splits with dependence-aware significance tests; subject-independent evaluation on datasets with patient identifiers; stable feature selection (e.g., bootstrap-aggregated MI rankings) and validation-set architecture tuning; evaluation on larger multi-patient, multi-channel datasets and on data where all classes share the same recording modality; comparison with further deep EEG architectures and analysis of the learned gate for interpretability.
+Repeated cross-validation over more recording-level splits with dependence-aware significance tests; subject-independent evaluation on datasets with patient identifiers; stable feature selection (e.g., bootstrap-aggregated MI rankings) and validation-set architecture tuning; evaluation on larger multi-patient, multi-channel datasets and on data where all classes share the same recording modality; comparison with further deep EEG architectures and analysis of the learned gate for interpretability.
 
 ## 14. Repository Structure
 
@@ -359,11 +358,8 @@ EEG-Classification-Using-DL/
     └── fig9_training_curves.png
 ```
 
-This repository contains the paper and its figures only. The paper does not provide source code, and none is claimed here.
-
 ## 15. References
 
-Selected references as cited in the paper (see the PDF for the full list of 37):
 
 1. Andrzejak RG, Lehnertz K, Mormann F, Rieke C, David P, Elger CE (2001) Indications of nonlinear deterministic and finite-dimensional structures in time series of brain electrical activity: dependence on recording region and brain state. *Phys Rev E* 64(6):061907. https://doi.org/10.1103/PhysRevE.64.061907
 2. Wong S, Simmons A, Rivera-Villicana J, et al. (2023) EEG datasets for seizure detection and prediction—a review. *Epilepsia Open* 8(2):252–267. https://doi.org/10.1002/epi4.12704
