@@ -290,8 +290,6 @@ Ictal recall was 0.9939 for all models (164 of 165 segments). **Interictal was t
 ### ROC curves and learned representation
 
 
-**Fig. 8 (original, page 13).** One-vs-rest ROC curves of the Model C ensemble (left) and t-SNE projection of the fused embedding (right) on the primary test split. Reported macro AUC is 0.9923 (Ictal 1.000, Normal 0.989, Interictal 0.988). The t-SNE plot separated Ictal clearly, while Normal and Interictal overlapped slightly.
-
 The mean gate value on the CNN embedding was 0.521 (Normal), 0.552 (Interictal) and 0.654 (Ictal), indicating that both branches contribute and the CNN branch is weighted more for Ictal.
 
 ### Ablation study — paper Table 9
