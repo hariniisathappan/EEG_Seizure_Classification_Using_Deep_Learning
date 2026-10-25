@@ -1,7 +1,7 @@
 # GDF-Net: Gated Fusion of a Raw-Signal Convolutional Branch and Wavelet–Spectral Features for Three-Class EEG Classification Under Recording-Level Evaluation
 
 **Authors:** Harinii S, Krithikalakshmi R
-**Paper:** [`EEG_Classification_Using_DL.pdf`](EEG_Classification_Using_DL.pdf)
+**Paper:** [`EEG_Classification_Using_DL.pdf`]
 
 > This README summarises the research paper above. All figures in `figures/` are the **original figures extracted from the paper PDF** (Figs. 1–9), and all numbers are the values reported in the paper. The Mermaid flowcharts are simplified Markdown representations that complement, not replace, the original figures.
 
