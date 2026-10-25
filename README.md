@@ -23,7 +23,7 @@
 13. [Future Work](#13-future-work)
 14. [Repository Structure](#14-repository-structure)
 15. [References](#15-references)
-16. [Disclaimer](#16-disclaimer)
+
 
 ---
 
@@ -351,7 +351,7 @@ Per the paper: repeated cross-validation over more recording-level splits with d
 ```text
 EEG-Classification-Using-DL/
 ├── README.md
-├── EEG_Classification_Using_DL.pdf
+├── EEG_Classification_Using_DL.ipynb
 └── figures/
     ├── fig1_experimental_pipeline.png
     ├── fig2_dwt_filter_bank.png
